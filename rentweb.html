@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatisierte Immobilienverwaltungssoftware für private Vermieter">
+    <title>Immobilienverwaltung Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#startseite">Startseite</a></li>
+                <li><a href="#funktionen">Funktionen</a></li>
+                <li><a href="#preise">Preise</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <h1>Vereinfachen Sie die Verwaltung Ihrer Immobilien mit unserer intelligenten Software</h1>
+        <p>Optimieren Sie Ihre Mietzahlungen, Wartungsanfragen und Vertragsverwaltung mit unserer benutzerfreundlichen Plattform – alles an einem Ort!</p>
+        <button onclick="window.location.href='#demo'">Jetzt kostenlos testen</button>
+    </header>
+
+    <!-- Funktionen Section -->
+    <section id="funktionen">
+        <h2>Unsere Funktionen</h2>
+        <div class="funktionen-container">
+            <div class="funktion">
+                <h3>Mietzahlungsmanagement</h3>
+                <p>Automatische Rechnungsstellung, Zahlungsmanagement und Mahnwesen.</p>
+            </div>
+            <div class="funktion">
+                <h3>Wartungsmanagement</h3>
+                <p>Einfaches Ticket-System für Wartungsanfragen, das direkt an Handwerker weitergeleitet wird.</p>
+            </div>
+            <div class="funktion">
+                <h3>Vertragsmanagement</h3>
+                <p>Erstellen und unterschreiben Sie digitale Mietverträge – sicher und schnell.</p>
+            </div>
+            <div class="funktion">
+                <h3>Echtzeit-Reporting</h3>
+                <p>Behalten Sie Ihre Einnahmen und Ausgaben mit detaillierten Berichten immer im Blick.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preise Section -->
+    <section id="preise">
+        <h2>Preismodell</h2>
+        <div class="preise-container">
+            <div class="preis">
+                <h3>Basisversion</h3>
+                <p>Kostenlos – für kleine Vermieter mit den wichtigsten Funktionen.</p>
+            </div>
+            <div class="preis">
+                <h3>Premium-Version</h3>
+                <p>Ab 25 € / Monat – für erweiterte Funktionen und mehr Immobilien.</p>
+            </div>
+            <div class="preis">
+                <h3>Enterprise-Version</h3>
+                <p>Ab 50 € / Monat – für große Immobiliengesellschaften mit zusätzlichen Funktionen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo">
+        <h2>Kostenlose Demo-Version</h2>
+        <button onclick="window.location.href='https://www.deine-seite.com/demo'">Jetzt testen</button>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt">
+        <h2>Kontaktieren Sie uns</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">Impressum</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+CSS-Styling (styles.css)
+css
+Copy
+Edit
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #218838;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.funktionen-container, .preise-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.funktion, .preis {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.funktion h3, .preis h3 {
+    color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
